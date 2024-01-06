@@ -8,12 +8,12 @@ const Navbar = () => {
 
 
     const handleClick  =  () => {
-        navigate('/about');
+        navigate('/about'); 
     }
 
     return (
         <header class="antialiased">
-            <nav class="bg-white flex items-center justify-between border-b-2 border-gray-300 px-4 lg:px-6 py-2.5 ">
+            <nav class="bg-white flex items-center justify-between border-b-2 border-black drop-shadow-xl px-4 lg:px-6 py-2.5 ">
                 <div class="flex flex-wrap justify-between items-center">
                     <div class="flex justify-start items-center pl-10">
                         <a href="/" class="flex ">

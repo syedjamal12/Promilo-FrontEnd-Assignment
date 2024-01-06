@@ -46,7 +46,7 @@ const ProductsList = () => {
     const displayData = searchQuery ? filteredData : data;
 
     return (
-        <section class="flex flex-col items-center py-10 bg-gray-100">
+        <section class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100  flex flex-col items-center py-10 bg-gray-100">
             <div className='w-full pb-10'>
                 <SearchBar onSearchChange={handleSearchChange} />
             </div>

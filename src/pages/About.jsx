@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
 
-      <div className='bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 h-[1600px]'>
+      <div className='bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 h-[1620px]'>
       <Navbar />
 
       <div className=" w-fit mx-16 p-6 bg-white shadow-md rounded-md my-20  font-poppins">
@@ -13,7 +13,7 @@ const About = () => {
         {/* Folder Structure Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Folder Structure:</h2>
-          <pre className="bg-gray-100 p-4 overflow-x-auto">
+          <pre className="bg-gray-100 p-4 overflow-x-auto rounded-lg">
             {`
           - /src
             - /components
@@ -50,11 +50,11 @@ const About = () => {
           <ol className="list-decimal ml-6 mb-4">
             <li className="mb-2">
               <strong>Clone the Repository:</strong>
-              <pre className="bg-gray-100 p-2 my-2">git clone https://github.com/syedjamal12/Promilo-FrontEnd-Assignment</pre>
+              <pre className="bg-gray-100 p-2 my-2 rounded-lg">              git clone https://github.com/syedjamal12/Promilo-FrontEnd-Assignment</pre>
             </li>
             <li className="mb-2">
               <strong>Install Dependencies:</strong>
-              <pre className="bg-gray-100 p-2 my-2">
+              <pre className="bg-gray-100 p-2 my-2 rounded-lg">
                 {`
               cd my-project
               npm install
@@ -63,7 +63,7 @@ const About = () => {
             </li>
             <li className="my-2">
               <strong>Run the Application:</strong>
-              <pre className="bg-gray-100 p-2 my-2">
+              <pre className="bg-gray-100 p-2 my-2 rounded-lg">
                 {`
               npm run dev
               `}
@@ -71,10 +71,16 @@ const About = () => {
               <p className="my-2">The application will be accessible at <code className="bg-gray-100 p-1">http://localhost:5173</code>.</p>
             </li>
           </ol>
-          <p className="mb-4"><strong>Note:</strong> Ensure to use the provided login credentials <strong>(user: test45@yopmail.com, password: Test@123)</strong>  when accessing the login page.</p>
+          <p className="mb-4"><strong>Note:</strong> Ensure to use the provided login credentials <strong>(email: test45@yopmail.com, password: Test@123)</strong>  when accessing the login page.</p>
         </section>
+      
       </div>
+      <footer className='absolute font-poppins left-[38%] bg-transparent'>
+        Created with 💖 by <strong>Syed Jamal Ahmed</strong> 
+      </footer>
       </div>
+
+      
     </>
   )
 }

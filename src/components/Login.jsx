@@ -90,7 +90,11 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
+                <footer className='absolute bottom-2 font-poppins text-white left-[38%] bg-transparent'>
+                    Created with 💖 by <strong>Syed Jamal Ahmed</strong>
+                </footer>
             </div>
+
         </section>
     </>
     )
