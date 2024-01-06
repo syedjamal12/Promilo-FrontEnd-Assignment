@@ -1,7 +1,16 @@
-import React from 'react'
-import logo from '../assets/logo.png'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
+
+    const navigate = useNavigate();
+
+
+    const handleClick  =  () => {
+        navigate('/about');
+    }
+
     return (
         <header class="antialiased">
             <nav class="bg-white flex items-center justify-between border-b-2 border-gray-300 px-4 lg:px-6 py-2.5 ">
@@ -16,9 +25,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='mr-40'>
-                    <a href="/about">
-                        <button className='bg-blue-700  text-white font-poppins px-5 py-2 rounded-md'>About</button>
-                    </a>
+                        <button onClick ={handleClick} className='bg-blue-700  text-white font-poppins px-5 py-2 rounded-md'>About</button>
                 </div>
 
             </nav>
